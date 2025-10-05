@@ -35,7 +35,7 @@ class AnimeController extends Controller
             'season_id' => 'required|exists:seasons,id',
             'title' => 'required|string|max:255',
             'genre' => 'nullable|string',
-            'poster' => 'nullable|image|max:5000',
+            'poster' => 'nullable|image|max:1024',
             'last_episode' => 'nullable|integer'
         ]);
 
